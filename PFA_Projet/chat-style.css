@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+/* Chat Container */
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease; /* Fade-in animation for the chat container */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #2E8B57;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: slideInDown 0.5s ease; /* Slide-in animation for the title */
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Chat bubble styles */
+.chat-message {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+  opacity: 0; /* Hide initially */
+  animation: fadeIn 0.5s ease, slideInLeft 0.5s ease forwards; /* Fade-in and slide-in animation */
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.message {
+  padding: 16px;
+  border-radius: 12px;
+  max-width: 70%;
+  font-size: 16px;
+  line-height: 1.5;
+  word-break: break-word;
+  position: relative;
+  overflow-wrap: break-word;
+  animation: fadeIn 0.5s ease forwards; /* Fade-in animation for each message */
+}
+
+.message.self {
+  background-color: #e6f2ff;
+  color: #333;
+  align-self: flex-end;
+}
+
+.message.self::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: -6px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #e6f2ff;
+}
+
+.message.bot {
+  background-color: #e0f7fa;
+  color: #333;
+  align-self: flex-start;
+}
+
+.message.bot::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: -6px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #e0f7fa;
+}
+
+/* Input and Send Button Styles */
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  animation: slideInUp 0.5s ease; /* Slide-up animation for input container */
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#user-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#send-button {
+  padding: 12px 24px;
+  background-color: #2E8B57;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+  margin-left: 10px;
+}
+
+#send-button:hover {
+  background-color: #38a169;
+  transform: scale(1.1); /* Scale effect on hover */
+}

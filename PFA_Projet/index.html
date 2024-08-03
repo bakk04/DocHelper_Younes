@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style="--vh: 100vh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DocHelper est une plateforme médicale avancée utilisant l'intelligence artificielle pour fournir une assistance personnalisée aux patients. Notre objectif est de faciliter la gestion des maladies et d'offrir des solutions médicales adaptées grâce à des technologies de pointe et des ressources éducatives complètes."
+    />
+    <title>DocHelper</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="logo/Health-Medical-Logo-design-isolated-on-transparent-background-PNG.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+  </head>
+
+  <body>
+    <input type="checkbox" id="bars" />
+    <nav class="nav-bar" id="navbar">
+      <div class="content">
+        <div class="site-logo">
+          <a href="#" class="logo-link">
+            <img
+              src="logo/Health-Medical-Logo-design-isolated-on-transparent-background-PNG.png"
+              alt="Logo"
+              class="logo-image"
+            />
+            <strong>DocHelper</strong>
+          </a>
+        </div>
+
+        <ul class="navigation">
+          <li class="link"><a href="#home">Accueil</a></li>
+          <li class="link"><a href="Chat.html">ChatBot</a></li>
+          <li class="link"><a href="#propos">À Propos</a></li>
+          <li class="link"><a href="#call">Contactez-nous</a></li>
+        </ul>
+
+        <div class="right-nav">
+          <a href="Login.html" class="link button">Espace Utilisateur</a>
+          <button id="theme-toggle" aria-label="Toggle dark/light mode">
+            🌙
+          </button>
+        </div>
+
+        <label for="bars" class="icon-bars"
+          ><i class="ri-bar-chart-2-fill"></i
+        ></label>
+      </div>
+    </nav>
+    <div class="nav-line"></div>
+
+    <!-- Add this to your HTML -->
+    <div class="back-to-home" id="backToHome">
+      <div class="arrow">&#8679;</div>
+      <!-- Unicode for an upward arrow -->
+    </div>
+
+    <header class="home" id="home">
+      <video autoplay muted loop>
+        <source src="vd/3191572-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="content">
+        <h1>
+          DocHelper<strong> : </strong> Votre <strong>Solution</strong> Médicale
+          Intelligente
+        </h1>
+        <h4>L'innovation médicale accessible en un clic</h4>
+        <button class="btn-explore" onclick="window.location.href='Chat.html';">
+          <b>ChatBot</b>
+          <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="about" id="propos">
+      <div class="content">
+        <div class="items">
+          <div class="image">
+            <img
+              src="img/abstract-abstraction-biology-chemistry-wallpaper-preview.jpg"
+              alt="Image d'exemple"
+            />
+          </div>
+          <div class="item">
+            <div class="item-content">
+              <h2 class="about-title">À propos</h2>
+              <div class="about-desc">
+                <p>
+                  DocHelper est une plateforme interactive destinée à fournir un
+                  soutien médical personnalisé aux utilisateurs. En utilisant
+                  l'intelligence artificielle, DocHelper permet aux patients de
+                  communiquer leurs symptômes via un chat interactif.
+                </p>
+                <p>
+                  L'objectif principal de DocHelper est de rendre l'information
+                  médicale accessible, informative et rassurante pour les
+                  patients.
+                </p>
+              </div>
+            </div>
+            <div class="item-data">
+              <div class="col">
+                <h1>500</h1>
+                <span>Conseils de santé</span>
+              </div>
+              <div class="col">
+                <h1>120</h1>
+                <span>Vidéos explicatives</span>
+              </div>
+              <div class="col">
+                <h1>250</h1>
+                <span>Ressources médicales</span>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/message/DSI75UR7SR6RD1"
+              target="_blank"
+              class="btn-explore"
+            >
+              <b>Contactez-nous</b>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="next" id="encyclopedia">
+      <div class="heading">
+        <h1 class="title">Assistance Médicale</h1>
+        <p class="subtitle">Votre Santé Simplifiée</p>
+      </div>
+      <div class="content">
+        <div class="items">
+          <div class="card">
+            <div class="image">
+              <img
+                src="img/pour-un-meilleur-depistage-de-l-asthme-interview-du-dr-pierrick-horde-f59018de8fed4428.jpeg"
+                alt="Conseils de santé"
+              />
+            </div>
+            <div class="content-card">
+              <h4>Conseils de Santé</h4>
+              <p>
+                Découvrez des conseils pratiques pour maintenir et améliorer
+                votre bien-être au quotidien
+              </p>
+              <button class="btn-read">Explorer</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="img/Medecin-scaled.jpg" alt="Vidéos explicatives" />
+            </div>
+            <div class="content-card">
+              <h4>Vidéos Explicatives</h4>
+              <p>
+                Visionnez nos vidéos éducatives pour mieux comprendre divers
+                sujets médicaux
+              </p>
+              <button class="btn-read">Explorer</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img
+                src="img/desktop-wallpaper-amazing-ultra-doctors-background-medical-background-health.jpg"
+                alt="Ressources médicales"
+              />
+            </div>
+            <div class="content-card">
+              <h4>Ressources Médicales</h4>
+              <p>
+                Accédez à une multitude de documents et guides pour vous
+                informer sur votre santé
+              </p>
+              <button class="btn-read">Explorer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="tutorials">
+      <div class="heading">
+        <h1 class="title">Ressources</h1>
+        <p class="subtitle">Bibliothèque Médicale</p>
+      </div>
+      <div class="content">
+        <div class="items">
+          <div class="card">
+            <img
+              src="img/ClinicalRM-becomes-ICON-GPHS-to-rapidly-respond-to-global-health-crises-says-CRO.jpg"
+              alt="Articles Médicaux"
+            />
+            <div class="content-card">
+              <p>
+                Articles Médicaux : Accès à une bibliothèque complète d'articles
+                couvrant divers sujets médicaux
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="img/men-medical-health-doctor-thumbnail.jpg"
+              alt="Vidéos Explicatives"
+            />
+            <div class="content-card">
+              <p>
+                Vidéos Explicatives : Des vidéos pédagogiques présentant des
+                concepts médicaux complexes de manière claire et compréhensible
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="img/UT662M-01-UL-Listed-Hospital-TVs-Special-Commercial-TV-ID-M.avif"
+              alt="Forums de Discussion"
+            />
+            <div class="content-card">
+              <p>
+                Forums de Discussion : Une plateforme où les patients et les
+                professionnels de la santé peuvent poser des questions et
+                échanger des conseils
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="site-banner">
+      <div class="content">
+        <div class="row">
+          <p>DocHelper</p>
+        </div>
+      </div>
+      <p class="subtitle">Ce site est réalisé par Younes Bakkali Terghi</p>
+    </div>
+
+    <section class="contact" id="call">
+      <div class="content">
+        <div class="items">
+          <div class="item">
+            <div class="heading">
+              <h1 class="title">Contact</h1>
+              <div class="subtitle">
+                Nous sommes en mesure de répondre dans les 24 heures.
+              </div>
+            </div>
+            <div class="row">
+              <div class="card">
+                <div class="line">
+                  <span><i class="ri-phone-line"></i></span>
+                  <h4>Téléphone</h4>
+                </div>
+                <p>0628503265</p>
+              </div>
+              <div class="card">
+                <div class="line">
+                  <span><i class="ri-mail-line"></i></span>
+                  <h4>Email</h4>
+                </div>
+                <p>younessbakkali09@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <form action="" method="post">
+              <input type="email" class="input" placeholder="Votre Email" />
+              <input type="tel" class="input" placeholder="Votre Téléphone" />
+              <textarea
+                rows="6"
+                class="input"
+                placeholder="Votre Message"
+              ></textarea>
+              <button class="btn-contact">Envoyer un message !</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conseils" id="conseils">
+      <div class="heading">
+        <h1 class="titl">Conseils Médicaux</h1>
+        <p class="subtitle">Dernières Nouvelles et Articles</p>
+      </div>
+      <div class="content">
+        <div class="conseils-post">
+          <h2>Les Dernières Avancées en IA Médicale</h2>
+          <p>
+            Découvrez comment l'intelligence artificielle transforme le monde
+            médical...
+          </p>
+          <a
+            href="#"
+            class="btn-read-more"
+            data-content="L'intelligence artificielle (IA) révolutionne le domaine médical. Grâce à des algorithmes avancés, elle permet des diagnostics plus précis et des traitements personnalisés. Des systèmes d'IA peuvent analyser des images médicales, prédire des maladies avant l'apparition des symptômes, et même assister les chirurgiens pendant les opérations. De plus, l'IA joue un rôle crucial dans la gestion des données de santé, facilitant la recherche et l'amélioration des soins aux patients."
+            >Lire la suite</a
+          >
+        </div>
+        <div class="conseils-post">
+          <h2>Conseils pour un Mode de Vie Sain</h2>
+          <p>
+            Apprenez des conseils pratiques pour maintenir une bonne santé au
+            quotidien...
+          </p>
+          <a
+            href="#"
+            class="btn-read-more"
+            data-content="Adopter un mode de vie sain est essentiel pour prévenir les maladies et améliorer la qualité de vie. Voici quelques conseils pratiques : mangez équilibré, faites de l'exercice régulièrement, dormez suffisamment, évitez le stress, et hydratez-vous bien. En intégrant ces habitudes dans votre routine quotidienne, vous pouvez maintenir votre corps et votre esprit en bonne santé."
+            >Lire la suite</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for displaying the full content -->
+    <div id="blogModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-text"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="content">
+        <h4>DocHelper</h4>
+        <div class="social">
+          <span>
+            <a
+              href="https://www.instagram.com/younes_bakkali_?igsh=MXE5eTlqMzNuNnQ4Mw=="
+              target="_blank"
+              ><i class="ri-instagram-fill"></i
+            ></a>
+          </span>
+          <span>
+            <a href="https://wa.me/message/DSI75UR7SR6RD1" target="_blank"
+              ><i class="ri-whatsapp-fill"></i
+            ></a>
+          </span>
+          <span>
+            <a href="mailto:younessbakkali09@gmail.com"
+              ><i class="ri-mail-line"></i
+            ></a>
+          </span>
+        </div>
+        <p>
+          <i class="ri-double-quotes-l"></i>
+          Explorez, apprenez et prenez soin de votre santé avec DocHelper, votre
+          guide vers un bien-être optimal.
+          <i class="ri-double-quotes-r"></i>
+        </p>
+        <p>Découvrez une assistance médicale enrichissante avec DocHelper.</p>
+        <ul class="navigation">
+          <li class="link"><a href="#home">Accueil</a></li>
+          <li class="link"><a href="Chat.html">ChatBot</a></li>
+          <li class="link"><a href="#encyclopedia">À Propos</a></li>
+          <li class="link"><a href="#call">Contactez-nous</a></li>
+        </ul>
+      </div>
+      <div class="rights">
+        Copyright &#169;
+        <a href="http://" target="_blank" rel="noopener noreferrer"
+          >DocHelper-Younes</a
+        >. Tous droits réservés
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
